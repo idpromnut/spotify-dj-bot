@@ -1,0 +1,3 @@
+botConfig:
+  discordToken: "$DISCORD_BOT_TOKEN"
+  admins:
