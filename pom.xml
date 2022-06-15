@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.unrecoverable</groupId>
 	<artifactId>spotify-dj-bot</artifactId>
@@ -25,8 +23,8 @@
 			<url>https://repo.spring.io/libs-release/</url>
 		</repository>
 		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 
@@ -213,6 +211,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>se.michaelthelin.spotify</groupId>
+			<artifactId>spotify-web-api-java</artifactId>
+			<version>7.1.0</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
@@ -224,12 +228,12 @@
 			<version>1.8.3</version>
 		</dependency>
 
-                <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-misc -->
-                <dependency>
-                            <groupId>org.apache.lucene</groupId>
-                            <artifactId>lucene-misc</artifactId>
-                            <version>9.0.0</version>
-                </dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-misc -->
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-misc</artifactId>
+			<version>9.0.0</version>
+		</dependency>
 
 	</dependencies>
 
@@ -431,10 +435,10 @@
 					<include>etc/*.template</include>
 				</includes>
 			</resource>
-	        <resource>
-	            <directory>src/main/resources</directory>
-	            <filtering>true</filtering>
-	        </resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
 		</resources>
 	</build>
 </project>
